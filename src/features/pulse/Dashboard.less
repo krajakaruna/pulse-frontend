@@ -1,0 +1,55 @@
+@import '../../styles/mixins';
+
+.pulse-dashboard {
+  .app-bk{
+    height: 40px;
+    width: 60px;
+    background:url('../../images/pulse.png'); ;
+    //height: 100vh;
+  }
+  .ant-form-horizontal .ant-form-item-label {
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    text-align: left;
+  }
+  .site-page-header {
+    border: 1px solid rgb(235, 237, 240);
+  }
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+    color: #f5a103;
+    border-bottom: 2px solid #003760;
+  }
+  .ant-card-head-title {
+    display: inline-block;
+    -ms-flex: 1;
+    flex: 1 1;
+    padding: 16px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: orange;
+    font-weight: 900;
+    /* background-color: #003760; */
+  }
+  .ant-card-head {
+    border-bottom: 1px solid #ffa500;
+  }
+  .ant-radio-checked .ant-radio-inner {
+    border-color: #ffa500;
+  }
+  .ant-radio-inner::after {
+
+    background-color: #ffa500;
+
+  }
+}
+.blinking{
+  animation:blink 1s infinite;
+}
+
+
+@keyframes blink {
+  0% {color: #ffa500}
+  50% {color: #5a46b5;}
+  100% {color: #ffa500;}
+}
