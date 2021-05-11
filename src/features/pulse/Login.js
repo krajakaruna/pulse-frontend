@@ -90,8 +90,9 @@ export class Login extends Component {
                       localStorage.setItem('userId',allData.data.userId);
                       localStorage.setItem('token',allData.data.token);
                       localStorage.setItem('RoleDetails',allData.data.RoleName);
+                      localStorage.setItem('role',allData.data.RoleName[0].roleName);
                       localStorage.setItem('projectList',JSON.stringify(allData.data.ProjectDetails));
-                    // console.log("token=",allData.data.token);
+                    // console.log("token=",allData.data.RoleName);
 
                       message.success(" User Login succeeded", 3);
                       this.props.history.push("/pulse-dashboard")

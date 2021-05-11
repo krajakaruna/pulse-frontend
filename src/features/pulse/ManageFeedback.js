@@ -112,13 +112,11 @@ export class ManageFeedback extends Component {
 
               feedback:allData.data.feedback,
               rate:allData.data.rate,
-
-            })
+            });
             this.props.actions.showCreatModal();
           }
-
   })
-  }
+  };
 
   InActiveFeedback = (feedbackId) => {
    // console.log("feedbackId id="+feedbackId)

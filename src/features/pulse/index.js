@@ -14,3 +14,5 @@ export { default as Team } from './Team';
 export { default as Offers } from './Offers';
 export { default as About } from './About';
 export { default as Footer } from './Footer';
+export { default as AgeingDashboard } from './AgeingDashboard';
+export { default as ViewAgeReport } from './ViewAgeReport';

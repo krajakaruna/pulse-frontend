@@ -287,10 +287,10 @@ export class Home extends Component {
                             {window.innerWidth > 425 ?
                                 <Card hoverable style={{
                                     width: 500,
-                                    height: 150,
+                                    height: 170,
                                     margin: 10,
                                     //backgroundColor: 'rgb(0 61 88)',
-                                    backgroundColor: 'rgb(229 233 236)',
+                                    backgroundColor: 'rgb(235 249 250 / 86%)',
                                     borderRadius: 15,
                                     fontSize: 12
                                 }} size={10} bordered={false}>
@@ -334,7 +334,7 @@ export class Home extends Component {
                                     width: 320,
                                     height: 120,
                                     margin: 10,
-                                    backgroundColor: 'rgb(229 233 236)',
+                                    backgroundColor: 'rgb(235 249 250 / 86%)',
                                     borderRadius: 15,
                                     fontSize: 10
                                 }} size={10} bordered={false}>

@@ -15,6 +15,7 @@ import {
   Team,
   Offers,
   About,
+  AgeingDashboard,
 } from './';
 
 export default {
@@ -33,5 +34,6 @@ export default {
     { path: '/team', component: Team },
     { path: '/offers', component: Offers },
     { path: '/about', component: About },
+    { path: '/ageing', component: AgeingDashboard },
   ],
 };

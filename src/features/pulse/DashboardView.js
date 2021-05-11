@@ -3,23 +3,8 @@ import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
-import {
-    Row,
-    Input,
-    Col,
-    Button,
-    Select,
-    DatePicker,
-    Empty,
-    Divider,
-    Alert,
-    Statistic,
-    Card,
-    Skeleton,
-    Tag, message, Form
-} from "antd";
+import {Row, Input, Col, Button, Select, DatePicker, Empty, Divider, Alert, Statistic, Card, Skeleton, Tag, message, Form} from "antd";
 import {Chart, Interval, Axis, Tooltip, Coordinate, Legend, View, Annotation, DonutChart, Interaction, getTheme, Point,} from "bizcharts";
-
 import { AudioOutlined ,SearchOutlined,IssuesCloseOutlined, ClockCircleOutlined,UnorderedListOutlined ,ArrowDownOutlined,CheckCircleOutlined    } from '@ant-design/icons';
 import { DataView } from '@antv/data-set';
 
@@ -714,55 +699,55 @@ export class DashboardView extends Component {
               </div>
 
           <Divider />
-          <Card bordered={false}  style={{...CardStylebackground,marginLeft:50,marginRight:50}} hoverable={true} bordered={true}>
-          <div className="ant-row">
-                  <div className="ant-col ant-col-xs-24 ant-col-xl-24">
-                      <center>
-                              <TextLoop mask>
-                                  <div style={{fontWeight:850,color: '#353535'}}>Project Wise</div>
-                                  <div style={{fontWeight:850,color: '#353535'}}>Project Wise</div>
-                              </TextLoop>
+          {/*<Card bordered={false}  style={{...CardStylebackground,marginLeft:50,marginRight:50}} hoverable={true} bordered={true}>*/}
+          {/*<div className="ant-row">*/}
+          {/*        <div className="ant-col ant-col-xs-24 ant-col-xl-24">*/}
+          {/*            <center>*/}
+          {/*                    <TextLoop mask>*/}
+          {/*                        <div style={{fontWeight:850,color: '#353535'}}>Project Wise</div>*/}
+          {/*                        <div style={{fontWeight:850,color: '#353535'}}>Project Wise</div>*/}
+          {/*                    </TextLoop>*/}
 
-                      <br/>
-                      <br/>
-                          <Skeleton loading={this.state.loading} active paragraph={{ rows: 5 } }>
-                              {this.state.GetProjectWise.length>0?
-                                  <Chart height={500} padding="auto" data={this.state.GetProjectWise}  autoFit filter={[
-                                      ['Total', val => val != null]
-                                  ]}>
-                                      <Interval
-                                          adjust={[
-                                              {
-                                                  type: 'dodge',
-                                                  marginRatio: 0,
-                                              },
-                                          ]}
-                                          // color="Name"
-                                          color={['Name', ['#17f517', '#0496ff', '#ec058e', '#7b2cbf',
-                                              '#640d14', '#86d03c','#ffd400','#f35b04',
-                                              '#c1121f']]}
+          {/*            <br/>*/}
+          {/*            <br/>*/}
+          {/*                <Skeleton loading={this.state.loading} active paragraph={{ rows: 5 } }>*/}
+          {/*                    {this.state.GetProjectWise.length>0?*/}
+          {/*                        <Chart height={500} padding="auto" data={this.state.GetProjectWise}  autoFit filter={[*/}
+          {/*                            ['Total', val => val != null]*/}
+          {/*                        ]}>*/}
+          {/*                            <Interval*/}
+          {/*                                adjust={[*/}
+          {/*                                    {*/}
+          {/*                                        type: 'dodge',*/}
+          {/*                                        marginRatio: 0,*/}
+          {/*                                    },*/}
+          {/*                                ]}*/}
+          {/*                                // color="Name"*/}
+          {/*                                color={['Name', ['#17f517', '#0496ff', '#ec058e', '#7b2cbf',*/}
+          {/*                                    '#640d14', '#86d03c','#ffd400','#f35b04',*/}
+          {/*                                    '#c1121f']]}*/}
 
-                                          position="Name*Total"
-                                          size={50}
-                                          label={['Name', {style: {
-                                                  fill: "#46554c",
+          {/*                                position="Name*Total"*/}
+          {/*                                size={50}*/}
+          {/*                                label={['Name', {style: {*/}
+          {/*                                        fill: "#46554c",*/}
 
-                                              },}]}
-                                      />
-                                      <Tooltip shared />
-                                      <Interaction type="active-region" />
-                                  </Chart>
-                                  :
-                                  <center>
-                                      <Empty/>
-                                  </center>
+          {/*                                    },}]}*/}
+          {/*                            />*/}
+          {/*                            <Tooltip shared />*/}
+          {/*                            <Interaction type="active-region" />*/}
+          {/*                        </Chart>*/}
+          {/*                        :*/}
+          {/*                        <center>*/}
+          {/*                            <Empty/>*/}
+          {/*                        </center>*/}
 
-                              }
-                          </Skeleton>
-                      </center>
-                  </div>
-              </div>
-          </Card>
+          {/*                    }*/}
+          {/*                </Skeleton>*/}
+          {/*            </center>*/}
+          {/*        </div>*/}
+          {/*    </div>*/}
+          {/*</Card>*/}
 
       </div>
     );

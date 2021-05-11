@@ -24,6 +24,7 @@ import axios from "axios";
 import jwt_decode from "jwt-decode";
 import Feedback from "./Feedback";
 import ManageFeedback from "./ManageFeedback";
+import {AgeingDashboard} from "./AgeingDashboard";
 
 
 const { TextArea } = Input;
@@ -188,10 +189,22 @@ export class Dashboard extends Component {
                                           mode="horizontal"  style={{textAlign:'right',backgroundColor:'#003760',color:'#ffa500',fontWeight:800}}
                                     >
 
+                                        {/*{localStorage.getItem("token")!=null && localStorage.getItem("features").includes("Dashboard") ?*/}
+                                        {/*    <Menu.Item key="dashboard" icon={<AppstoreOutlined/>}>*/}
+                                        {/*        Dashboard*/}
+                                        {/*    </Menu.Item> : null}*/}
+                                        {/*    */}
+
                                         {localStorage.getItem("token")!=null && localStorage.getItem("features").includes("Dashboard") ?
-                                            <Menu.Item key="dashboard" icon={<AppstoreOutlined/>}>
-                                                Dashboard
-                                            </Menu.Item> : null}
+                                        <SubMenu key="dashboard" icon={<MailOutlined/>} title="Dashboard">
+                                            <Menu.Item key="ReviewTicket">
+                                                 Ticket Review
+                                            </Menu.Item>
+                                            <Menu.Item key="Ageing">
+                                                Ageing Report
+                                            </Menu.Item>
+                                        </SubMenu>
+                                            :null}
 
                                         {localStorage.getItem("token")!=null && localStorage.getItem("features").includes("FeedBack_Menu") ?
                                             <SubMenu key="feedback" icon={<MailOutlined/>} title="Feedback">
@@ -281,12 +294,6 @@ export class Dashboard extends Component {
                               :null}
 
                                 {this.state.current == "dashboard" ?
-                                    // <Card bordered={false} style={{marginRight: 20, marginLeft: 20,backgroundColor:'rgb(24 121 169)',marginTop:20}}
-                                    //
-                                    //       title={[ JSON.parse(localStorage.getItem("projectList")).length<2? "Mitra Managed Services - "+JSON.parse(localStorage.getItem("projectList")).map((x)=>x.projectName) +" Dashboard":"Mitra Managed Services - Admin Dashboard" ]}
-                                    // >
-                                    //
-                                    // </Card>
                                     <div>
                                         <center>
                                             {this.state.current2!=null?
@@ -294,11 +301,45 @@ export class Dashboard extends Component {
                                                     Thank you for using Pulse. We would appreciate if you share us about your experience in this 30 second survey.
                                                 </Button>:null}
                                         </center>
+                                        <Card hoverable={true} bordered={true} style={{marginRight:20,marginLeft:20,height:'auto',marginTop:20}} title="Ticket Review  " >
+
                                         <DashboardView/>
+                                        </Card>
                                     </div>
 
                                     : null
                                 }
+
+                                {this.state.current === "ReviewTicket" ?
+                                    <div>
+                                        <center>
+                                            {this.state.current2!=null?
+                                                <Button style={{fontWeight:800}} type="link" className="blinking" onClick={this.goFeedback}>
+                                                    Thank you for using Pulse. We would appreciate if you share us about your experience in this 30 second survey.
+                                                </Button>:null}
+                                        </center>
+                                        <Card hoverable={true} bordered={true} style={{marginRight:20,marginLeft:20,height:'auto',marginTop:20}} title="Ticket Review  " >
+
+                                        <DashboardView/>
+                                        </Card>
+                                    </div>
+                                    : null}
+
+                                {this.state.current === "Ageing" ?
+                                    <div>
+                                        <center>
+                                            {this.state.current2!=null?
+                                                <Button style={{fontWeight:800}} type="link" className="blinking" onClick={this.goFeedback}>
+                                                    Thank you for using Pulse. We would appreciate if you share us about your experience in this 30 second survey.
+                                                </Button>:null}
+                                        </center>
+                                        <Card hoverable={true} bordered={true} style={{marginRight:20,marginLeft:20,height:'auto',marginTop:20}} title="Ageing Report  " >
+
+                                        <AgeingDashboard/>
+                                        </Card>
+                                    </div>
+                                    : null}
+
                                 {this.state.current === "ClientFeedback" ?
                                     <Feedback/>
 

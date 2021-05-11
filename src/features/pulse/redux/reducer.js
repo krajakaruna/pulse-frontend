@@ -11,12 +11,16 @@ import { reducer as showViewModalReducer } from './showViewModal';
 import { reducer as hideViewModalReducer } from './hideViewModal';
 import { reducer as showCreatModalReducer } from './showCreatModal';
 import { reducer as hideCreatModalReducer } from './hideCreatModal';
+import { reducer as showAgeModalReducer } from './showAgeModal';
+import { reducer as hideAgeModalReducer } from './hideAgeModal';
 
 const reducers = [
   showViewModalReducer,
   hideViewModalReducer,
   showCreatModalReducer,
   hideCreatModalReducer,
+  showAgeModalReducer,
+  hideAgeModalReducer,
 ];
 
 export default function reducer(state = initialState, action) {
