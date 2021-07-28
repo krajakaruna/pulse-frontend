@@ -245,7 +245,7 @@ this.submitSearchData();
     axios.get( `/api/ageing/get-ageing-issue-type`,{headers})
         .then(res => {
           const allData = res;
-          console.log('ageing date==',allData)
+         // console.log('ageing date==',allData)
           if(res.status){
             if( allData.data.data.length>=1){
               //    console.log("get all the project status ==", allData.data)
@@ -301,7 +301,7 @@ this.submitSearchData();
     }
     var P_name=[];
     P_name.push( JSON.parse(localStorage.getItem("projectList")).map((x)=>x.projectName));
-    console.log(localStorage.getItem("role"))
+    //console.log(localStorage.getItem("role"))
     if(this.state.selectedProject.length>0) {
       var Data = {
         "selectedStatus": this.state.selectedStatus,
@@ -339,8 +339,8 @@ this.submitSearchData();
     };        axios.post(`/api/ageing/get-Search-data`,Data,{headers} )
         .then(res => {
           const allData = res.data;
-          console.log("all age data===",allData.data);
-          console.log("AgeSearchData===",allData.data.AgeSearchData);
+          // console.log("all age data===",allData.data);
+          // console.log("AgeSearchData===",allData.data.AgeSearchData);
        let val=allData.data.AgeSearchData;
           const groups = val.reduce((groups, item) => {
             const group = (groups[item[17]] || []);
@@ -349,7 +349,7 @@ this.submitSearchData();
             return groups;
           }, {});
 
-          console.log(groups);
+          //console.log(groups);
 
           var lookup = {};
           var items = val;
@@ -423,8 +423,6 @@ this.submitSearchData();
         })
   };
   showModal = (id,Data) => {
-      console.log("id=",id)
-    console.log("Data=",Data)
 
     this.setState({
       // showViewModal: true,

@@ -17,11 +17,11 @@ const { Header, Content } = Layout;
 const { Meta } = Card;
 
 const contentStyle = {
-  height: '160px',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
+    height: '160px',
+    color: '#ff2a16',
+    lineHeight: '160px',
+    textAlign: 'center',
+    background: '#2fe11f',
 };
 export class Team extends Component {
   constructor(props) {
@@ -136,7 +136,7 @@ export class Team extends Component {
                                 <Carousel autoplay>
                                     <div>
                                         <div className="demo">
-                                            <div className="container">
+                                            <div className="container" >
                                                 <div className="row">
                                                     <div className="col-md-6 col-sm-6">
                                                         <div id="testimonial-slider" className="owl-carousel">
@@ -266,6 +266,29 @@ export class Team extends Component {
 
                                                 </div>
                                                 <div className="row">
+
+                                                    <div className="col-md-6 col-sm-6">
+                                                        <div id="testimonial-slider" className="owl-carousel">
+                                                            <div className="testimonial">
+                                                                <div className="pic">
+                                                                    <img
+                                                                        src={require('../../images/IsuruM.jpg')}/>
+                                                                </div>
+                                                                <div className="testimonial-content">
+                                                                    <h3 className="testimonial-title">Isuru Madhushanka
+                                                                        <small className="post">Associate Tech Lead</small>
+                                                                    </h3>
+                                                                    <p className="description">
+                                                                        "An innovative, result-oriented IT Professional with 7 years of strong
+                                                                        software development experience and a good ability in working in a team,
+                                                                        with individuals also taking leadership role to guide my teams towards victory.
+                                                                        Always ready to share my knowledge in the best way to benefit the
+                                                                        organization and its goals."
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                     <div className="col-md-6 col-sm-6">
                                                         <div id="testimonial-slider" className="owl-carousel">
                                                             <div className="testimonial">
@@ -286,6 +309,8 @@ export class Team extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
+                                                <div className="row">
                                                     <div className="col-md-6 col-sm-6">
                                                         <div id="testimonial-slider" className="owl-carousel">
                                                             <div className="testimonial">
@@ -305,14 +330,34 @@ export class Team extends Component {
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <div className="col-md-6 col-sm-6">
+                                                        <div id="testimonial-slider" className="owl-carousel">
+                                                            <div className="testimonial">
+                                                                <div className="pic">
+                                                                    <img
+                                                                        src={require('../../images/Yashmika.jpg')}/>
+                                                                </div>
+                                                                <div className="testimonial-content">
+                                                                    <h3 className="testimonial-title">Yashmika Kuruppu
+                                                                        <small className="post">Senior Software Engineer</small>
+                                                                    </h3>
+                                                                    <p className="description">
+                                                                        "I have three-years plus experience and I have completed the Bachelor of Science in Computer Science. I would like to enjoy a field that will challenge me and allow me to use my education, skills and experience in a way that is mutually beneficial to both myself and my employer and allow for future growth and advancement.
+                                                                        My lessure time mostly spend with kittens, puppies and books."
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="demo">
+                                        <div className="demo" >
                                             <div className="container">
+
                                                 <div className="row">
                                                     <div className="col-md-6 col-sm-6">
                                                         <div id="testimonial-slider" className="owl-carousel">
@@ -339,18 +384,60 @@ export class Team extends Component {
                                                             <div className="testimonial">
                                                                 <div className="pic">
                                                                     <img
-                                                                        src={require('../../images/Naditha-static.jpg')}/>
+                                                                        src={require('../../images/suvi.jpg')}/>
                                                                 </div>
                                                                 <div className="testimonial-content">
-                                                                    <h3 className="testimonial-title">Naditha Gallella
-                                                                        <small className="post">Application Support Engineer</small>
+                                                                    <h3 className="testimonial-title">Suvi De Silva
+                                                                        <small className="post">Software Engineer</small>
                                                                     </h3>
                                                                     <p className="description">
-                                                                        "I am an application support engineer with passion and dedication with nearly 3 years of industry experience,
-                                                                        cloud technologies and Linux environment technologies fascinated me and half of my free time dedicates to it.
-                                                                        and also I have a cybersecurity-related background and Malware analysis and Pentesting are my favourite areas.
-                                                                        in my free time, I would like to play games, if you are interested in playing games with me such as Warthunder,
-                                                                        Apex legends, GTA just pings me."
+                                                                        "I'm an experienced software engineer who constantly seeks out innovative solutions to real world problems.
+                                                                        I've improved my analytical thinking and collaboration skills by working with business software development projects.
+                                                                        I love working with a team and I've also had the opportunity to serve as the software engineer leading for two projects
+                                                                        with different Technologies. I have improved my self to being a full stack developer by working with Dekstop, Web and Mobile
+                                                                        development projects."
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-md-6 col-sm-6">
+                                                        <div id="testimonial-slider" className="owl-carousel">
+                                                            <div className="testimonial">
+                                                                <div className="pic">
+                                                                    <img
+                                                                        src={require('../../images/kavinda.jpg')}/>
+                                                                </div>
+                                                                <div className="testimonial-content">
+                                                                    <h3 className="testimonial-title">Kavinda Priyamal
+                                                                        <small className="post">Associate Software Engineer</small>
+                                                                    </h3>
+                                                                    <p className="description">
+                                                                        "Currently I'm reading for a Bachelor of Information Technology degree in University of Colombo and I have worked in different projects with different technologies along with my degree.
+                                                                        also I'm an innovative person trying to learn new things and in my leisure time I really like to read books and travel."
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-md-6 col-sm-6">
+                                                        <div id="testimonial-slider" className="owl-carousel">
+                                                            <div className="testimonial">
+                                                                <div className="pic">
+                                                                    <img
+                                                                        src={require('../../images/pasindu-static.jpg')}/>
+                                                                </div>
+                                                                <div className="testimonial-content">
+                                                                    <h3 className="testimonial-title">Pasidu Hettarachchi
+                                                                        <small className="post"> Support Engineer</small>
+                                                                    </h3>
+                                                                    <p className="description">
+                                                                        "I’m working as an Intern support for Mitra Innovation. I’m a highly passionate with networked systems.
+                                                                        I've worked with clients in Europe, Australia, working in complex projects using Azure,
+                                                                        AWS and Creatio technologies with the Mitra Innovation managed-services team."
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -384,16 +471,15 @@ export class Team extends Component {
                                                             <div className="testimonial">
                                                                 <div className="pic">
                                                                     <img
-                                                                        src={require('../../images/pasindu-static.jpg')}/>
+                                                                        src={require('../../images/dulanjali.jpg')}/>
                                                                 </div>
                                                                 <div className="testimonial-content">
-                                                                    <h3 className="testimonial-title">Pasidu Hettarachchi
-                                                                        <small className="post"> Support Engineer</small>
+                                                                    <h3 className="testimonial-title">Dulanjali Liyanage
+                                                                        <small className="post">Software Developer</small>
                                                                     </h3>
                                                                     <p className="description">
-                                                                        "I’m working as an Intern support for Mitra Innovation. I’m a highly passionate with networked systems.
-                                                                        I've worked with clients in Europe, Australia, working in complex projects using Azure,
-                                                                        AWS and Creatio technologies with the Mitra Innovation managed-services team."
+                                                                        "I am a final year computer engineering undergraduate who is working as an intern.
+                                                                        I am passionate about learning new things. During my leisure time I enjoy reading story books and watching cartoons."
                                                                     </p>
                                                                 </div>
                                                             </div>
