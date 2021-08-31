@@ -25,6 +25,7 @@ import jwt_decode from "jwt-decode";
 import Feedback from "./Feedback";
 import ManageFeedback from "./ManageFeedback";
 import {AgeingDashboard} from "./AgeingDashboard";
+import {Ortom8Jira} from "./Ortom8Jira";
 
 
 const { TextArea } = Input;
@@ -241,6 +242,9 @@ export class Dashboard extends Component {
                                                 {localStorage.getItem("token")!=null && localStorage.getItem("features").includes("Report_Jira_MST") ?
                                                     <Menu.Item key="mst-jira"> MST Jira </Menu.Item>
                                                     :null}
+                                                {localStorage.getItem("token")!=null && localStorage.getItem("features").includes("Report_Jira_ortom8") ?
+                                                    <Menu.Item key="ortom8-jira">Ortom8 Jira</Menu.Item>
+                                                    :null}
                                                 {localStorage.getItem("token")!=null && localStorage.getItem("features").includes("Report_Jira_IT") ?
                                                     <Menu.Item key="it-jira">IT Jira</Menu.Item>
                                                     :null}
@@ -362,6 +366,12 @@ export class Dashboard extends Component {
                         <ItJira/>
                       </Card>
                       :null}
+                       {this.state.current=="ortom8-jira"?
+                           <Card hoverable={true} bordered={true} style={{marginRight:20,marginLeft:20,height:'auto',marginTop:20}} title="MST - Reports Ortom8 Jira " >
+                              <Ortom8Jira/>
+                          </Card>
+                            :null}
+
                   {this.state.current=="user"?
                       <Card hoverable={true} bordered={true} style={{marginRight:20,marginLeft:20,height:'auto',marginTop:20}} title="MST - Users Management " >
 

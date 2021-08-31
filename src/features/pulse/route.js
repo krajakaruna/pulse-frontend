@@ -16,6 +16,7 @@ import {
   Offers,
   About,
   AgeingDashboard,
+  Ortom8Jira,
 } from './';
 
 export default {
@@ -35,5 +36,6 @@ export default {
     { path: '/offers', component: Offers },
     { path: '/about', component: About },
     { path: '/ageing', component: AgeingDashboard },
+    { path: '/ortom8-jira', component: Ortom8Jira },
   ],
 };

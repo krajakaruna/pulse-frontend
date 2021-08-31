@@ -120,7 +120,7 @@ export class MstJira extends Component {
                   title="Successfully Updated jira Open ticket to Pulse database!"
                   subTitle={"Last updated "+ moment(this.state.lastUpdateOpen.jobEnd).format('MMMM Do YYYY, h:mm:ss a')  + " and status is "+ this.state.lastUpdateOpen.status }
                   extra={[
-                    <Button type="primary"  loading={this.state.loading1} onClick={this.getOpenTicket.bind(this)}>Open Ticket</Button>,
+                    <Button type="primary"  loading={this.state.loading1} onClick={this.getOpenTicket.bind(this)}>Update Open Ticket</Button>,
                   ]}
               />
             </TabPane>
@@ -130,7 +130,7 @@ export class MstJira extends Component {
                   title="Successfully Updated jira Closed ticket to Pulse database!"
                   subTitle={"Last updated "+ moment(this.state.lastUpdateClosed.jobEnd).format('MMMM Do YYYY, h:mm:ss a')  + " and status is "+ this.state.lastUpdateClosed.status }
                   extra={[
-                    <Button type="primary"    loading={this.state.loading2} onClick={this.getClosedTicket.bind(this)}>Closed Ticket</Button>,
+                    <Button type="primary"    loading={this.state.loading2} onClick={this.getClosedTicket.bind(this)}>Update Closed Ticket</Button>,
                   ]}
               />
             </TabPane>
