@@ -9,7 +9,7 @@ export default function CounterPage() {
   return (
     <div className="examples-counter-page">
       <h1>Counter</h1>
-      <p>This is simple counter demo to show how Redux sync actions work.</p>
+      <p>This is simple counter demo to how react hooks works. .</p>
       <button className="btn-minus-one" onClick={counterMinusOne} disabled={count === 0}>
         -
       </button>
