@@ -9,7 +9,7 @@ export default function CounterPage() {
   return (
     <div className="examples-counter-page">
       <h1>Counter</h1>
-      <p>This is simple counter demo to how react hooks works. .</p>
+      <p>Sample from kavishka .</p>
       <button className="btn-minus-one" onClick={counterMinusOne} disabled={count === 0}>
         -
       </button>
